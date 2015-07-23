@@ -1,0 +1,217 @@
+<!-- index.html.erb -->
+
+<div id="heroWrapper">
+  <img id="heroImg" src="http://lasvegastoppicks.com/wp-content/uploads/2014/04/Pool-Table-inside-Stitched-Cosmopolitan-Las-Vegas.jpg">
+</div>
+
+<div>
+  <img id="logo" src="http://i.imgur.com/1Zv3z7Z.png">
+</div>
+
+<!-- Container for buttons -->
+<div id="landingBox" class="col-sm-5 container">
+  <div id="landingBlurb">
+    <p>Styling, in person</p>
+  </div>
+
+<!-- Button trigger modal -->
+<span> 
+  <button id="landingModal" class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".signup">Sign In/Register</button>
+ <form action="/stylists", method="get">
+    <button id="stylistsBtn" type="submit" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+      Meet our stylists!
+    </button>
+ </form>
+</span>
+</div>
+
+<!-- Modal -->
+<div class="modal fade signup" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <br>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+            </ul>
+        </div>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="signin">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Email:</label>
+              <div class="controls">
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="Email" class="input-medium" required="">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">Password:</label>
+              <div class="controls">
+                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="Email">Email:</label>
+              <div class="controls">
+                <input id="Email" name="Email" class="form-control" type="text" placeholder="Email" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Name:</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="Name" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="password">Password:</label>
+              <div class="controls">
+                <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                <em>1-8 Characters</em>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+              <div class="controls">
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Flow transition break -->
+<section id="howTo">
+  <div class="container-fluid">
+  <header id="sectionHeader">
+    <h1 id="headerH1">How it works</h1>
+  </header>
+  </div>
+</section>
+
+<!-- Steps 1-3 -->
+<section id="howSteps">
+  <div class="row no-gutters">
+    <div class="col-xs-6">
+      <img class="stepsImg" src="http://www.v3.co.uk/IMG/526/200526/computer-hands-keyboard.jpg">
+    </div>
+    <div class="col-xs-6 steps1 how-steps">
+      <h2 class="howH2">Create a profile</h2>
+      <p class="howP">Simply fill out the necessary information such as your email and name. Once you create your account you can browse through our team of stylists and get to them them better!</p>
+    </div>
+  </div>
+   <div class="row no-gutters">
+    <div class="col-xs-6 steps2 how-steps">
+      <h2 class="howH2">Get to know the stylists</h2>
+      <p class="howP">Each of our stylists come with a picture, a description of themselves and their work history and a link to their portfolio. Feel free to browse through our wonderful team of stylists and get a feel for which stylist is right for you.</p>
+    </div>
+    <div class="col-xs-6">
+      <img class="stepsImg" src="http://www.allure.com/beauty-trends/blogs/daily-beauty-reporter/2013/06/26/man-looking-at-his-computer-screen.jpg">
+    </div>
+  </div>
+   <div class="row no-gutters">
+    <div class="col-xs-6">
+      <img class="stepsImg" src="http://www.informativeadvisor.com/wp-content/uploads/2014/01/Be-On-Time-1-7th-Image-1st-Row-585x390.jpg">
+    </div>
+    <div class="col-xs-6 steps3 how-steps">
+      <h2 class="howH2">Get in touch</h2>
+      <p class="howP">Once you've decided on your stylist it's time to get in touch! If you have not already you will be prompted to sign up for our monthly subscription fee. Once you are completely signed up and ready to go your stylist will get in touch with you through email to get to meet in person. Easy!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap carousel -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="slideImg" src="http://eatsleepdenim.com/blog/wp-content/uploads/2015/01/18-tommy-ton-fall-2015-menswear-street-style-03.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img class="slideImg" src="http://dontbethatbro.com/wp-content/uploads/2012/07/guerrisms_swagger.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+     <div class="item">
+      <img class="slideImg" src="http://www.vincent-ko.com/wp-content/uploads/2011/11/Sam-Lawson-Zara-Young-November-2011-5.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+     <div class="item">
+      <img class="slideImg" src="https://fashionwashere.files.wordpress.com/2012/02/zara114.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
